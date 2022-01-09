@@ -32,12 +32,4 @@ public class BishopBlackTest {
         Figure bishop = new BishopBlack(Cell.C1);
         bishop.way(Cell.F5);
     }
-
-    @Test()
-    public void whenWayFromC1ToG5() {
-        Figure bishop = new BishopBlack(Cell.C1);
-        Cell[] actual = bishop.way(Cell.G5);
-        Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
-        Assert.assertArrayEquals(expected, actual);
-    }
 }
